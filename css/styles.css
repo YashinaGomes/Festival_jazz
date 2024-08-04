@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    padding: 50px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav .menu li {
+    flex-shrink: 0;
+}
+
+nav .menu li a {
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.54px;
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+nav .menu li a:hover,
+nav .menu li:focus-within a {
+    border-bottom: 2px solid #FFF;
+}
+
+/* Menu Hambúrguer */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #FFF;
+    margin: 3px 0;
+}
+
+.menu-toggle:focus {
+    outline: none;
+}
+
+.container-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 667px;
+    background: #000000;
+    padding: 5rem;
+    box-sizing: border-box;
+}
+
+.logo_capa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 932px;
+    height: 408.922px;
+    margin-bottom: -26rem;
+}
+
+.instruments-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.music_piano {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12rem;
+    justify-content: flex-start;
+    flex: 7;
+}
+
+.sax_bass {
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.cultura {
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 33px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.music {
+    width: 290px;
+    height: 157px;
+    margin-left: 1rem;
+}
+
+.piano {
+    width: 245px;
+    height: 220px;
+    margin-left: 5rem;
+}
+
+.bass {
+    width: 128px;
+    height: 367px;
+}
+
+.saxophone {
+    width: 128px;
+    height: 178px;
+    margin-left: -9rem;
+}
+
+.sobre_o_festival {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.o_festival {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto_festival {
+    width: 1163px;
+    height: 741px;
+    object-fit: cover;
+}
+
+.texto_overlay {
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.caixa_texto {
+    width: 473px;
+    height: 667px;
+    background: rgba(255, 255, 255, 0.911);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align:left;
+    overflow-y: auto;
+    padding: 3rem;
+}
+
+.titulo_festival {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 150%;
+    letter-spacing: -0.66px;
+    text-transform: capitalize;
+    margin: 0 0 1rem;
+}
+
+p {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 139%;
+    letter-spacing: 0.72px;
+    margin: 0;
+}
+
+.botao-conheca {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.seta-icon {
+    width: 20px;
+    height: auto;
+    margin-right: 0.5rem;
+    transition: transform 0.3s ease; /* Adds a smooth zoom effect to the arrow */
+}
+
+.botao-conheca:hover {
+    color: #000000;
+    transform: scale(1.1); /* Zooms in the entire button (text and arrow) */
+}
+
+
+
+.sambaiba {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto_sambaiba {
+    width: 1163px;
+    height: 741px;
+    object-fit: cover;
+}
+
+.texto_overlay2 {
+    position: absolute;
+    top: 50%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.titulo_sambaiba {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 150%;
+    letter-spacing: -0.66px;
+    text-transform: capitalize;
+    margin: 0 0 2rem;
+    line-height: 89%;
+    letter-spacing: -0.66px;
+}
+
+/* Animações */
+@keyframes fall {
+    0% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.image-fall {
+    animation: fall 2s ease-out forwards;
+}
+
+.image-jump {
+    animation: jump 2s ease-in-out infinite;
+}
+
+.no-jump {
+    animation: fall 2s ease-out forwards;
+}
+
+/* Menu Responsivo para Tablets */
+@media (max-width: 1024px) and (min-width: 769px) {
+    nav .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #000000;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    nav .menu.active {
+        display: flex;
+        padding: 4rem 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 1100;
+    }
+
+    .menu-icon {
+        width: 30px;
+        height: 3px;
+        background-color: #FFF;
+        margin: 3px 0;
+    }
+
+    .menu-toggle:focus {
+        outline: none;
+    }
+
+    .cultura {
+        font-size: 19px;
+    }
+
+    .logo_capa {
+        width: 70%;
+        height: 150px;
+        margin-bottom: -5rem;
+    }
+
+    .music {
+        display: none;
+    }
+
+    .piano {
+        margin-top: 6rem;
+    }
+
+    .bass {
+        display: none;
+    }
+
+    .saxophone {
+        margin-bottom: -5rem;
+        margin-right: 9rem;
+    }
+
+    .texto_overlay {
+        left: 50%;
+    }
+
+    
+.texto_overlay2 {
+    left: 50%;
+}
+}
+
+/* Menu Responsivo para Dispositivos Móveis */
+@media (max-width: 768px) {
+    nav .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #000000;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+        overflow: auto;
+    }
+
+    nav .menu.active {
+        display: flex;
+        padding: 4rem 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding-top: 20px;
+        z-index: 1100;
+    }
+
+    .menu-icon {
+        width: 30px;
+        height: 3px;
+        background-color: #FFF;
+        margin: 3px 0;
+    }
+
+    .menu-toggle:focus {
+        outline: none;
+    }
+
+    .cultura {
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    .logo_capa {
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+
+    .music {
+        display: none;
+    }
+
+    .piano {
+        margin-bottom: 8rem;
+        margin-left: 2rem;
+    }
+
+    .bass {
+        display: none;
+    }
+
+    .saxophone {
+        display: none;
+    }
+
+    .texto_overlay {
+        left: 50%;
+    }
+
+    .texto_overlay2 {
+        left: 50%;
+    }
+}
