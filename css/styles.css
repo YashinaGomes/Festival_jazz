@@ -9,9 +9,7 @@ body {
 
 
 nav {
-    position: sticky;
     top: 0;
-    z-index: 1000;
     display: flex;
     justify-content: center;
     background-color: #000000;
@@ -83,16 +81,16 @@ nav .menu li:focus-within a {
     width: 100%;
     height: 667px;
     background: #000000;
-    padding: 5rem;
     box-sizing: border-box;
+    margin-top: 7rem;
 }
 
 .logo_capa {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 932px;
-    height: 408.922px;
+    width: 40%;
+    height: 40%;
     margin-bottom: -26rem;
 }
 
@@ -120,7 +118,7 @@ nav .menu li:focus-within a {
 .cultura {
     color: #FFF;
     font-family: 'Montserrat', sans-serif;
-    font-size: 33px;
+    font-size: 27px;
     font-weight: 500;
     text-align: center;
 }
@@ -154,6 +152,7 @@ nav .menu li:focus-within a {
     align-items: center;
     height: 100vh;
     margin: 0;
+    
 }
 
 .o_festival {
